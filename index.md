@@ -4,14 +4,19 @@
 
 ### About this site
 
-This page was created as a concept showcase and design report for the AntsNet, ant tracking and identifying AI algorithm.
+This page was created as a concept showcase and design report for AntsNet, an visual ant tracking and identifying AI algorithm.
 
-## Project Summary
+### Project Summary
 
 AntsNet is a culmination of my interests in ants and algorithms. The goal is to create a binary classifier to distinguish ants from other items, then an ant genus classifier. The final model will combine all of this into a video feed-capable YOLO network.
 
-## The General Neural Network
+### The General Neural Network
 
 The simplistic description of a standard neural network employs layers of nodes as the data structures. The values of the nodes in the input layer represent distinct independant variables, and are fully connected to the first network layer, meaning each input node makes a connection to every first-layer node. These connections hold weights. The values from one layer are multiplied by weights before storage in the following layer's nodes, and so on.
 
+picture here
+
 The exact architecture of neural networks uses matrices. Each layer is a column vector variable. Each layer vector is multipled by a weight matrix and added to a bias vector of the same dimensions such that the matrix operations are valid. In order to increase the network's capacity, the resultant vector is run through an 'activation' function, which delinearizes the layers and stops them from becoming a collapsible linear combination.
+
+picture here
+
