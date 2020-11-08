@@ -1,7 +1,3 @@
-[comment]: <You can use the [editor on GitHub](https://github.com/Derykian/NN-concepts-showcase/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.>
-
-[comment]: <Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.>
-
 ### About this site
 
 This page was created as a concept showcase and design report for AntsNet, an visual ant tracking and identifying AI algorithm.
@@ -36,4 +32,4 @@ Convolutional neural networks are usually laid out as follows:
   - Fully connected layer
   - Fully connected...
 
--simplify list and move details down here-
+simplify list and move details down here
