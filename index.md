@@ -4,7 +4,7 @@
 
 ### About this site
 
-This page was created as a concept showcase and design report for AntsNet, an visual ant tracking and identifying AI algorithm.
+This page was created as a concept showcase and design report for AntsNet, an visual ant tracking and identifying AI algorithm
 
 ### Project Summary
 
@@ -16,7 +16,10 @@ The simplistic description of a standard neural network employs layers of nodes 
 
 picture here
 
-The exact architecture of neural networks uses matrices. Each layer is a column vector variable. Each layer vector is multipled by a weight matrix and added to a bias vector of the same dimensions such that the matrix operations are valid. In order to increase the network's capacity, the resultant vector is run through an 'activation' function, which delinearizes the layers and stops them from becoming a collapsible linear combination.
+The exact architecture of neural networks uses matrices. Each layer is a column vector variable. Each layer vector is multiplied by a weight matrix and added to a bias vector of the same dimensions such that the matrix operations are valid. In order to increase the network's capacity, the resultant vector is run through an 'activation' function, which delinearizes the layers and stops them from becoming a collapsible linear combination.
 
 picture here
 
+### Convolutional Neural Networks
+
+Simple fully-connected deep neural networks require the data to be input as a vector. Visual data, such as a digital photograph, must be flattened into a vector for this case. The issue is that this disrupts spatial relationships within the picture, and therefore regular deep neural networks used in this application have had mediocre performance. Convolutional neural networks make use of 'convolutional' layers, which convolve a filter with the input image or feature-map. The data in CNN's are taken in as a 2-dimensional matrix
