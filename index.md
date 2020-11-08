@@ -1,3 +1,5 @@
+[comment]: hi
+
 ### About this site
 
 This page was created as a concept showcase and design report for AntsNet, an visual ant tracking and identifying AI algorithm.
@@ -32,4 +34,4 @@ Convolutional neural networks are usually laid out as follows:
   - Fully connected layer
   - Fully connected...
 
-simplify list and move details down here
+-simplify list and move details down here-
