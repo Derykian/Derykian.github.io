@@ -28,7 +28,7 @@ Convolutional neural networks are usually laid out as follows:
 
 - Feature learning
   - an input image of dimensions _ x _ with color depth of 3, that has been augmented, downscaled, and normalized during data preprocessing
- - a convolutional layer with a filter size of 3x3, stride of 1, ReLU activation
+  - a convolutional layer with a filter size of 3x3, stride of 1, ReLU activation
   - 2x2 pooling layer
   - convolutional layer
   - pooling layer
