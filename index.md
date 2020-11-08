@@ -35,3 +35,5 @@ Convolutional neural networks are usually laid out as follows:
 - Classification
   - Fully connected layer
   - Fully connected...
+
+-simplify list and move details down here-
