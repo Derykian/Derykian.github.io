@@ -4,7 +4,7 @@
 
 ### About this site
 
-This page was created as a concept showcase and design report for AntsNet, an visual ant tracking and identifying AI algorithm
+This page was created as a concept showcase and design report for AntsNet, an visual ant tracking and identifying AI algorithm.
 
 ### Project Summary
 
@@ -22,4 +22,16 @@ picture here
 
 ### Convolutional Neural Networks
 
-Simple fully-connected deep neural networks require the data to be input as a vector. Visual data, such as a digital photograph, must be flattened into a vector for this case. The issue is that this disrupts spatial relationships within the picture, and therefore regular deep neural networks used in this application have had mediocre performance. Convolutional neural networks make use of 'convolutional' layers, which convolve a filter with the input image or feature-map. The data in CNN's are taken in as a 2-dimensional matrix
+Simple fully-connected deep neural networks require the data to be input as a vector. Visual data, such as a digital photograph, must be flattened into a vector for this case. The issue is that this disrupts spatial relationships within the image, and therefore regular deep neural networks used in this application have had mediocre performance. Convolutional neural networks make use of 'convolutional' layers, which convolve a filter with the input image or feature-map, which are 2-dimensional (sometimes with additional separate color channels) and preserves spacial relationships.
+
+Convolutional neural networks are usually laid out as follows:
+
+- Feature learning
+- - an input image of dimensions _ x _ with color depth of 3, that has been augmented, downscaled, and normalized during data preprocessing
+  - a convolutional layer with a filter size of 3x3, stride of 1, ReLU activation
+  - 2x2 pooling layer
+  - convolutional layer
+  - pooling layer
+- Classification
+- - Fully connected layer
+  - Fully connected...
