@@ -37,7 +37,7 @@ Convolutional neural networks are usually structured as follows:
 **bold**
 ~~- thing~~
 
-- Feature learning
+~~- Feature learning
   - an input image of dimensions _ x _ with color depth of 3, that has been augmented, downscaled, and normalized during data preprocessing
   - a convolutional layer with a filter size of 3x3, stride of 1, ReLU activation
   - 2x2 pooling layer
@@ -45,7 +45,7 @@ Convolutional neural networks are usually structured as follows:
   - pooling layer
 - Classification
   - Fully connected layer
-  - Fully connected...
+  - Fully connected...~~
 
 picture here
 
