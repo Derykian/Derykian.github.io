@@ -28,9 +28,8 @@ Convolutional neural networks are usually structured as follows:
 - Convolutional layer (small filters)
 - Pooling layer
 - Convolutional layer (larger filters)
-- Pooling layer
-
-    ⁝
+- Pooling layer  
+⁝
 - Flatten
 - Multiple fully connected layers
 - Output
