@@ -20,9 +20,22 @@ picture here
 
 ### Convolutional Neural Networks
 
-Simple fully-connected deep neural networks require the data to be input as a vector. Visual data, such as a digital photograph, must be flattened into a vector for this case. The issue is that this disrupts spatial relationships within the image, and therefore regular deep neural networks used in this application have had mediocre performance. Convolutional neural networks make use of 'convolutional' layers, which convolve a filter with the input image or feature-map, which are 2-dimensional (sometimes with additional separate color channels) and preserve spacial relationships.
+Simple fully-connected deep neural networks require the data to be input as a vector. Visual data, such as a digital photograph, must be flattened into a vector for this case. The issue is that this disrupts spatial relationships within the image, and therefore regular deep neural networks used in this application have had mediocre performance. Convolutional neural networks make use of 'convolutional' layers, which convolve a filter with the input image or feature-map, which are 2-dimensional (sometimes with additional separate color channels) and preserve spatial relationships.
 
-Convolutional neural networks are usually laid out as follows:
+Convolutional neural networks are usually structured as follows:
+
+- Input
+- Convolutional layer (small filters)
+- Pooling layer
+- Convolutional layer (larger filters)
+- Pooling layer
+- Flatten
+- Fully connected layers
+- Output
+
+~~strikethrough~~
+**bold**
+~~- thing~~
 
 - Feature learning
   - an input image of dimensions _ x _ with color depth of 3, that has been augmented, downscaled, and normalized during data preprocessing
@@ -33,5 +46,7 @@ Convolutional neural networks are usually laid out as follows:
 - Classification
   - Fully connected layer
   - Fully connected...
+
+picture here
 
 -simplify list and move details down here-
