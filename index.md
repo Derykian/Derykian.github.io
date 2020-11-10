@@ -31,7 +31,6 @@ Convolutional neural networks are usually structured as follows:
 - Pooling layer
 
     ⁝
-
 - Flatten
 - Multiple fully connected layers
 - Output
@@ -46,4 +45,4 @@ The input data with a shape of _ is fed into the first convolutional layer. *fil
 
 *convolutional and pooling layers are typically repeated with different dimensions _*
 
-*the parts covered thus far make up the **feature learning** section of the network. next is the **classification** part*
+*the parts covered thus far make up the **feature learning** section of the network. next is the **classification** part—*
