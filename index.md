@@ -20,7 +20,7 @@ The true architecture of neural networks makes heavy use of matrices. Each layer
 
 ### Convolutional Neural Networks
 
-Simple fully-connected deep neural networks require the data to be input as a vector. Visual data, such as a digital photograph, must be flattened into a vector for this case. The issue is that this disrupts spatial relationships within the image, and therefore regular deep neural networks used in this application have had mediocre performance. Convolutional neural networks make use of 'convolutional' layers, which convolve a filter with the input image or feature-map, which are 2-dimensional (sometimes with additional separate color channels) and preserve spatial relationships.
+Simple fully-connected deep neural networks require the data to be input as a vector. Visual data, such as a digital photograph, must be flattened into a vector for this case. The issue is that this disrupts spatial relationships within the image, and therefore regular deep neural networks used in this application have had mediocre performance. Convolutional neural networks make use of 'convolutional' layers, which convolve a filter with the input image or feature map, which are of two or more dimensions and preserve spatial relationships.
 
 Convolutional neural networks are usually structured as follows:
 
