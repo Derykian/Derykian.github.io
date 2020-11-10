@@ -30,23 +30,10 @@ Convolutional neural networks are usually structured as follows:
 - Convolutional layer (larger filters)
 - Pooling layer
 - Flatten
-- Fully connected layers
+- Multiple fully connected layers
 - Output
-
-~~strikethrough~~
-**bold**
-~~- thing~~
-
-~~- Feature learning
-  - an input image of dimensions _ x _ with color depth of 3, that has been augmented, downscaled, and normalized during data preprocessing
-  - a convolutional layer with a filter size of 3x3, stride of 1, ReLU activation
-  - 2x2 pooling layer
-  - convolutional layer
-  - pooling layer
-- Classification
-  - Fully connected layer
-  - Fully connected...~~
 
 picture here
 
--simplify list and move details down here-
+For applications such as identifying ants from colored photos like in AntsNet, the CNN is fed an input with 3 color channels, each a matrix of values representing how much of the respective color is within a pixel (typically these are square _ x _).
+
