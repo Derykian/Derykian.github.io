@@ -2,18 +2,15 @@
 
 ### About this site
 
-This page was created as a concept showcase and design report for AntsNet, a visual ant tracking and identifying AI algorithm. It will outline the general workings of neural networks, with a focus on convolutional neural networks and transfer learning, the areas most relevant to AntsNet. AntsNet is an ongoing research project and this site will be updated with new information and insights as the project's development progresses.
-
-talk about what you'll be doing with the site in a little more detail
-probably state clearly in the last sentence that this is an ongoing research project and you will be updating the site periodically as your work progresses.
+This page was created as a concept showcase and design report for AntsNet, a visual ant tracking and identifying AI algorithm. It will outline the general workings of neural networks, with a focus on convolutional neural networks and transfer learning, the areas most relevant to AntsNet. AntsNet is an ongoing research project and this site will be updated periodically with new information and insights as development progresses.
 
 ### Project summary
 
 AntsNet is a culmination of my interests in ants and algorithms. The goal is to create a binary classifier to distinguish ants from other items, then an ant genus classifier. The final model will combine all of this into a video feed-capable YOLO network.
 
-### General Neural Networks
+### The General Neural Network
 
-The simplistic description of a standard neural network employs layers of nodes as the data structures. The values of the nodes in the input layer represent distinct independent variables, and are fully connected to the first network layer, meaning each input node makes a connection to every first-layer node. These connections hold weights. The values from one layer are multiplied by weights before storage in the following layer's nodes, and so on.
+The simplistic description of a standard neural network employs layers of nodes as the data structures. The values of the nodes in the input layer represent distinct independent variables, and are fully connected to the first network layer, meaning each input node makes a connection to every first-layer node. These connections hold weights. The values from one layer are multiplied by weights before storage in the following layer's nodes, and so on until the output layer. The dimensions of the output layer vary by application, from one element in a binary classifier to as many as there are classes the network is trained to identify.
 
 *picture here*
 
@@ -21,7 +18,7 @@ The true architecture of neural networks makes heavy use of matrices. Each layer
 
 *picture here*
 
-### The Convolutional Neural Network
+### Convolutional Neural Networks
 
 Simple fully-connected deep neural networks require the data to be input as a vector. Visual data, such as a digital photograph, must be flattened into a vector for this case. The issue is that this disrupts spatial relationships within the image, and therefore regular deep neural networks used in this application have had mediocre performance. Convolutional neural networks make use of 'convolutional' layers, which convolve a filter with the input image or feature map, which are of two or more dimensions and preserve spatial relationships.
 
