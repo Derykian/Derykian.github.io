@@ -2,11 +2,11 @@
 
 ### About this site
 
-This page was created as a concept showcase and design report for AntsNet, a visual ant tracking and identifying AI algorithm. It will outline the general workings of neural networks, with a focus on convolutional neural networks and transfer learning, the areas most relevant to AntsNet. AntsNet is an ongoing research project and this site will be updated periodically with new information and insights as development progresses.
+This page was created as a concept showcase and design report for AntsNet, a visual ant tracking and identifying AI algorithm. It will outline the general workings of neural networks, with a focus on convolutional neural networks and transfer learning, the areas most relevant to AntsNet. This is an ongoing research project and this site will be updated periodically with new information and insights as development progresses.
 
 ### Project summary
 
-AntsNet is a culmination of my interests in ants and algorithms. The goal is to create a binary classifier to distinguish ants from other items, then an ant genus classifier. The final model will combine all of this into a video feed-capable YOLO network.
+AntsNet is a convolutional neural network-based deep learning algorithm designed to detect and 'box' ants from images, and identify them by genus. This project is a culmination of my interests in computer algorithms and ant behavior, and the end product serves to contribute to the ant-keeping community as well as provide an application for my newly developed skills in neural network programming. The network utilizes transfer learning, using pre-trained Inception, ResNet, and VGG-16 models as its base networks during development for performance comparison purposes. The final form of AntsNet will be open-sourced and publicly available, and I will be working to optimize the algorithm for use on hardware like Jetson or Raspberry Pi.
 
 ### The General Neural Network
 
@@ -38,7 +38,7 @@ Convolutional neural networks are usually structured as follows:
 
 For applications such as identifying ants from colored photos, the network is fed an input with 3 color channels, each a matrix of pixel color values usually of dimensions _.
 
-Prior to being input to the network, the dataset is preprocessed which involves downscaling the resolution and normalizing the pixel values of the images. Downscaling heavily reduces required system resources during training, with little impact to training performance. Normalization is required to mitigate exploding and vanishing gradients, caused by repeated operations with very large or tiny weights.
+Prior to being input to the network, the dataset images are preprocessed, which involves downscaling their dimensions and normalizing pixel values. Downscaling heavily reduces required system resources during training, with little impact to training performance. Normalization is required to mitigate exploding and vanishing gradients, caused by repeated operations with very large or tiny weights.
 
 
 The input data with a shape of _ is fed into the first convolutional layer. *filters, feature mapping, stride, same and valid, activation,...*
