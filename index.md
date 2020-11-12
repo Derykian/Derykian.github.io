@@ -11,7 +11,7 @@ probably state clearly in the last sentence that this is an ongoing research pro
 
 AntsNet is a culmination of my interests in ants and algorithms. The goal is to create a binary classifier to distinguish ants from other items, then an ant genus classifier. The final model will combine all of this into a video feed-capable YOLO network.
 
-### The general neural network
+### General Neural Networks
 
 The simplistic description of a standard neural network employs layers of nodes as the data structures. The values of the nodes in the input layer represent distinct independent variables, and are fully connected to the first network layer, meaning each input node makes a connection to every first-layer node. These connections hold weights. The values from one layer are multiplied by weights before storage in the following layer's nodes, and so on.
 
@@ -21,7 +21,7 @@ The true architecture of neural networks makes heavy use of matrices. Each layer
 
 *picture here*
 
-### Convolutional neural networks
+### The Convolutional Neural Network
 
 Simple fully-connected deep neural networks require the data to be input as a vector. Visual data, such as a digital photograph, must be flattened into a vector for this case. The issue is that this disrupts spatial relationships within the image, and therefore regular deep neural networks used in this application have had mediocre performance. Convolutional neural networks make use of 'convolutional' layers, which convolve a filter with the input image or feature map, which are of two or more dimensions and preserve spatial relationships.
 
