@@ -36,7 +36,10 @@ Convolutional neural networks are usually structured as follows:
 
 *picture here*
 
-For applications such as identifying ants from colored photos, the CNN is fed an input with 3 color channels, each a matrix of pixel color values. This input data has been through preprocessing which involved augmentation (link to generalization), downscaling to _ x _, and normalizing its pixel values to between 0 and 1 (link to normalization).
+For applications such as identifying ants from colored photos, the network is fed an input with 3 color channels, each a matrix of pixel color values usually of dimensions _.
+
+Prior to being input to the network, the dataset is preprocessed which involves downscaling the resolution and normalizing the pixel values of the images. Downscaling heavily reduces required system resources during training, with little impact to training performance. Normalization is required to mitigate exploding and vanishing gradients, caused by repeated operations with very large or tiny weights.
+
 
 The input data with a shape of _ is fed into the first convolutional layer. *filters, feature mapping, stride, same and valid, activation,...*
 
