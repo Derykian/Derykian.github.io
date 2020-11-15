@@ -20,7 +20,12 @@ The true architecture of neural networks makes heavy use of matrices. Each layer
 
 ### How Neural Networks Learn
 
-Networks are essentially piece-wise functions chained together
+*cost*
+
+*gradients*
+
+*backpropagation*
+
 
 ### Convolutional Neural Networks
 
