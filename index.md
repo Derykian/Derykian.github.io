@@ -1,4 +1,4 @@
-[comment]: hi
+[comment]: something
 
 ### About this site
 
@@ -10,13 +10,17 @@ AntsNet is a convolutional neural network-based deep learning algorithm designed
 
 ### The General Neural Network
 
-The simplistic description of a standard neural network employs layers of nodes as the data structures. The values of the nodes in the input layer represent distinct independent variables, and are fully connected to the first network layer, meaning each input node makes a connection to every first-layer node. These connections hold weights. The values from one layer are multiplied by weights before storage in the following layer's nodes, and so on until the output layer. The dimensions of the output layer vary by application, from one element in a binary classifier to as many as there are classes the network is trained to identify.
+The simplistic description of a standard neural network employs layers of nodes as the data structures. The values of the nodes in the input layer represent distinct independent variables, and are fully connected to the first network layer, meaning each input node makes a connection to every first-layer node. These connections hold weights. The values from one layer are multiplied by weights before storage in the following layer's nodes, and so on until the output layer. The dimensions of the output layer vary by application, from one element in a binary classifier to as many as there are classes a multiclass network is trained to identify.
 
 *picture here*
 
 The true architecture of neural networks makes heavy use of matrices. Each layer is a column vector variable. Each layer vector is multiplied by a weight matrix and added to a bias vector of the same dimensions such that the matrix operations are legal. In order to increase the network's capacity, the resultant vector is run through an 'activation' function, which delinearizes the network and prevents the layers from collapsing to a linear function.
 
 *picture here*
+
+### How Neural Networks Learn
+
+Networks are essentially piece-wise functions chained together
 
 ### Convolutional Neural Networks
 
@@ -36,9 +40,11 @@ Convolutional neural networks are usually structured as follows:
 
 *picture here*
 
+Prior to being input to the network, the dataset images are preprocessed, which involves downscaling their dimensions to _ and normalizing their pixel values to between 0 and 1. Downscaling heavily reduces the required resources during training, with little impact to training performance. Normalization is required to avoid exploding and vanishing gradients, caused by repeated operations with very large or tiny weights.
+
 For applications such as identifying ants from colored photos, the network is fed an input with 3 color channels, each a matrix of pixel color values usually of dimensions _.
 
-Prior to being input to the network, the dataset images are preprocessed, which involves downscaling their dimensions and normalizing pixel values. Downscaling heavily reduces required system resources during training, with little impact to training performance. Normalization is required to mitigate exploding and vanishing gradients, caused by repeated operations with very large or tiny weights.
+
 
 
 The input data with a shape of _ is fed into the first convolutional layer. *filters, feature mapping, stride, same and valid, activation,...*
