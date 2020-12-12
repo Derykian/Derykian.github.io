@@ -20,7 +20,7 @@ The true architecture of neural networks makes heavy use of matrices. Each layer
 
 ### How Neural Networks Learn
 
-During training, one piece of input data is fed through the layers of vector variables, its values being multiplied by weights and manipulated by activations until an output is reached at the end of the network. This output is compared with the label of the training input. A mean squared error of the network's predicted value to the label's value for that input is calculated. This is used to find the gradient of this multidimensional 'loss function'. Then through a procedure called backpropagation, adjustments to the weights in the network are determined by working backward from the output using the loss function gradient and the multivariable chain rule of calculus. With this algorithm, weight matrices and bias vectors can be systematically, incrementally edited to decrease loss, or error.
+While training a neural network, each input is fed through the layers of vector variables, its values being multiplied by weights and delinearized by activations until an output is reached at the end of the network. This output, or predicted value is compared to the input's label, the target value. The mean squared error of the network's predicted value to the label is calculated. This is used to find the gradient of this multidimensional 'loss function'. Then, through a procedure called backpropagation, adjustments to the weights in the network are determined by working backward from the output using the loss function gradient and the multivariable chain rule of calculus. With this algorithm, weight matrices and bias vectors can be systematically incremented toward the direction minimizing the network's loss.
 
 *picture here*
 
