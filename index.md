@@ -10,7 +10,7 @@ AntsNet is a convolutional neural network-based deep learning algorithm designed
 
 ### The General Neural Network
 
-The simplistic description of a standard neural network employs layers of nodes as the data structures. The values of the nodes in the input layer represent distinct independent variables, and are fully connected to the first network layer, meaning each input node makes a connection to every first-layer node. These connections hold weights. The values from one layer are multiplied by weights before storage in the following layer's nodes, and so on until the output layer. The dimensions of the output layer vary by application, from one element in a binary classifier to as many as there are classes a multiclass network is trained to identify.
+The simplistic description of a standard neural network employs layers of nodes as the data structures. The values of the nodes in the input layer represent distinct independent variables, and are fully connected to the first network layer, meaning each input node makes a connection to every first-layer node. These connections hold weights. The values from one layer are multiplied by weights before storage in the following layer's nodes, and so on until the output layer. The dimensions of the output layer vary by application, from one element in a binary classifier to as many as there are classes that a multiclass network is trained to identify.
 
 *picture here*
 
@@ -20,12 +20,9 @@ The true architecture of neural networks makes heavy use of matrices. Each layer
 
 ### How Neural Networks Learn
 
-*cost*
+During training, one piece of input data is fed through the layers of vector variables, its values being multiplied by weights and manipulated by activations until an output is reached at the end of the network. This output is compared with the label of the training input. A mean squared error of the network's predicted value to the label's value for that input is calculated. This is used to find the gradient of this multidimensional 'loss function'. Then through a procedure called backpropagation, adjustments to the weights in the network are determined by working backward from the output using the loss function gradient and the multivariable chain rule of calculus. With this algorithm, weight matrices and bias vectors can be systematically, incrementally edited to decrease loss, or error.
 
-*gradients*
-
-*backpropagation*
-
+*picture here*
 
 ### Convolutional Neural Networks
 
