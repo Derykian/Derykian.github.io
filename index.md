@@ -46,13 +46,4 @@ Prior to being input to the network the dataset images are preprocessed, which i
 
 For applications such as identifying ants from color images, the network is fed an input with 3 color channels, each a matrix of pixel color values usually of dimensions 224x224.
 
-
-
-
 The input data with a shape of 224x224 is fed into the first convolutional layer. *filters, feature mapping, stride, same and valid, activation,...*
-
-*pooling layer*
-
-*convolutional and pooling layers are typically repeated with different dimensions _*
-
-*the parts covered thus far make up the **feature learning** section of the network. next comes the **classification** section—*
