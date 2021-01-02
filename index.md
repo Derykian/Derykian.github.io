@@ -49,3 +49,5 @@ For applications such as identifying ants from color images, the network is fed 
 The input data with a shape of 224x224 is fed into the first convolutional layer. *filters, feature mapping, stride, same and valid, activation,...*
 
 ### Transfer Learning
+
+Currently in machine learning, an abundance of training data is key to good results. However, the volume of data required is often not available for every application, or to every machine learning developer. One way to remedy this is to use a different network pre-trained on a different dataset, as the base of the model for your new task, and this is Transfer Learning. Transfer learning is used when high network capacity is needed, but limited training data is available. The base networks are usually chosen such that their training data share a similar featureset to the new application. In image processing applications, it is common practice to start by retraining only the fully-connected layers of the base model, keeping the feature-detection portion intact.
